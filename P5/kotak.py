@@ -27,7 +27,7 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 faces = [[(x[i], y[i], z[i]) for i in vert] for vert in vertices]
 
 # Menambahkan ke plot
-ax.add_collection3d(Poly3DCollection(faces, alpha=0.5))
+ax.add_collection3d(Poly3DCollection(faces, facecolors=['red','green','blue','yellow','cyan','magenta'], alpha=0.5))
 
 # Setting label
 ax.set_xlabel('X')
